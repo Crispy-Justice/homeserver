@@ -1,4 +1,4 @@
-# HomeServer !
+# HomeServer 🏠
 
 ![alt text](https://github.com/Crispy-Justice/homeserver/blob/main/banner.png)
 
@@ -39,7 +39,7 @@
     alias mv='printf "\033[1;34m" && mv -v'
     alias mkdir='printf "\033[1;33m" && mkdir -v'
     alias rmdir='printf "\033[1;35m" && rmdir -v'
-❗logout and login
+‼️logout and login
 
    
 
