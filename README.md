@@ -72,7 +72,7 @@ https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer
 ```
 
 ## Install Monitoring Stuff
-Full Documentation - [RPI Docker Monitor](https://github.com/novaspirit/pi-hosted/blob/master/docs/rpi_docker_monitor.md)
+📄Full Documentation - [RPI Docker Monitor](https://github.com/novaspirit/pi-hosted/blob/master/docs/rpi_docker_monitor.md)
 ```
 sudo nano /boot/cmdline.txt
 
