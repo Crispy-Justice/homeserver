@@ -1,4 +1,4 @@
-# HomeServer 🏠
+# Home Server 🏠
 
 ![alt text](https://github.com/Crispy-Justice/homeserver/blob/main/banner.png)
 
