@@ -5,7 +5,7 @@
 ## Update the Pi
 
     sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge && sudo apt autoclean -y
-Reboot
+♻️Reboot
 
 ## Install Other Stuff
 
@@ -16,13 +16,13 @@ Reboot
     sudo apt update
     sudo apt install zsh
     `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-   Reboot.. Install Plugins
+  ♻️Reboot.. 📂Install Plugins
    
 
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions &&
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
  
-   Copy this to `.zshrc`
+   🖨️Copy this to `.zshrc`
    
 
     export ZSH="/home/veer/.oh-my-zsh"
@@ -39,26 +39,26 @@ Reboot
     alias mv='printf "\033[1;34m" && mv -v'
     alias mkdir='printf "\033[1;33m" && mkdir -v'
     alias rmdir='printf "\033[1;35m" && rmdir -v'
-logout and login
+❗logout and login
 
    
 
 
 
 ## Install Docker & Portainer
-Clone [novaspirit](https://github.com/novaspirit)/[pi-hosted](https://github.com/novaspirit/pi-hosted).
+🐑Clone [novaspirit](https://github.com/novaspirit)/[pi-hosted](https://github.com/novaspirit/pi-hosted).
 
     git clone https://github.com/novaspirit/pi-hosted.git
-  Install Docker
+ 📂Install Docker
   
 	 ~/pi-hosted/install_docker.sh
- Reboot..
- Install Portainer
+ ♻️Reboot..
+ 📂Install Portainer
 
     ~/pi-hosted/install_portainer.sh
 
 ## Install WireGuard VPN
-git repo - [Nyr](https://github.com/Nyr)/**[wireguard-install](https://github.com/Nyr/wireguard-install)**
+🛠️git repo - [Nyr](https://github.com/Nyr)/**[wireguard-install](https://github.com/Nyr/wireguard-install)**
 
     wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 
