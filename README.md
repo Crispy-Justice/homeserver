@@ -9,7 +9,7 @@
 
 ## Install Other Stuff
 
-    sudo apt install curl wget speedtest-cli ranger git htop
+    sudo apt install curl wget speedtest-cli ranger git htop shellinabox
 
 ## Install Zsh
 
