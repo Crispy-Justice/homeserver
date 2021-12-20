@@ -10,7 +10,7 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge &&
 ```
 ♻️Reboot
 
-##Install Other Stuff
+## Install Other Stuff
 ```
 sudo apt install curl wget speedtest-cli ranger git htop shellinabox tree
 ```
@@ -53,20 +53,17 @@ alias rmdir='printf "\033[1;35m" && rmdir -v'
 
 ## Install Docker & Portainer
 
-🐑Clone [novaspirit](https://github.com/novaspirit)/[pi-hosted](https://github.com/novaspirit/pi-hosted).
-```
-git clone https://github.com/novaspirit/pi-hosted.git
-```
+🛠️Git repo - [novaspirit](https://github.com/novaspirit)/[pi-hosted](https://github.com/novaspirit/pi-hosted).
 
 📂Install Docker
 ```
-~/pi-hosted/install_docker.sh
+wget -qO- https://git.io/JwUkc | bash
 ```
 
 ♻️Reboot..
 📂Install Portainer
 ```
-~/pi-hosted/install_portainer.sh
+wget -qO- https://git.io/JwUnf | bash
 ```
     
 🧩Add Portainer Templates
@@ -78,7 +75,7 @@ https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer
 
 ## Install WireGuard VPN
 
-🛠️git repo - [Nyr](https://github.com/Nyr)/**[wireguard-install](https://github.com/Nyr/wireguard-install)**
+🛠️Git repo - [Nyr](https://github.com/Nyr)/**[wireguard-install](https://github.com/Nyr/wireguard-install)**
 
 ```
 wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
