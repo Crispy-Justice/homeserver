@@ -5,6 +5,7 @@
 ## Update the Pi
 
     sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge && sudo apt autoclean -y
+Reboot
 
 ## Install Other Stuff
 
