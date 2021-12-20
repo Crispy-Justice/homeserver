@@ -1,5 +1,7 @@
 # HomeServer !
 
+![alt text](https://github.com/Crispy-Justice/homeserver/blob/main/banner.png)
+
 ## Update the Pi
 
     sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge && sudo apt autoclean -y
