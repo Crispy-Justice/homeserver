@@ -16,8 +16,8 @@ sudo apt install curl wget speedtest-cli ranger git htop shellinabox tree
 ```
 ## Install Zsh
 ```
-sudo apt update
-sudo apt install zsh
+sudo apt update &&
+sudo apt install zsh &&
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 ♻️Reboot..
