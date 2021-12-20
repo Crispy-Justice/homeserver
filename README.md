@@ -10,9 +10,9 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge &&
 ```
 ♻️Reboot
 
-## Install Other Stuff
+##Install Other Stuff
 ```
-sudo apt install curl wget speedtest-cli ranger git htop shellinabox
+sudo apt install curl wget speedtest-cli ranger git htop shellinabox tree
 ```
 ## Install Zsh
 ```
