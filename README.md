@@ -71,6 +71,20 @@ wget -qO- https://git.io/JwUnf | bash
 https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm64.json
 ```
 
+## Install Monitoring Stuff
+Full Documentation - [RPI Docker Monitor](https://github.com/novaspirit/pi-hosted/blob/master/docs/rpi_docker_monitor.md)
+```
+sudo nano /boot/cmdline.txt
+
+#Paste:
+systemd.unified_cgroup_hierarchy=0 cgroup_enable=memory cgroup_memory=1
+
+sudo reboot
+
+#Run script:
+wget -qO- https://git.io/JPXba | sudo bash
+```
+
 
 
 ## Install WireGuard VPN
@@ -80,4 +94,6 @@ https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer
 ```
 wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 ```
+
+
 
