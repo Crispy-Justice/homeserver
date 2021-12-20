@@ -71,7 +71,7 @@ wget -qO- https://git.io/JwUnf | bash
 https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm64.json
 ```
 
-## Install Monitoring Stuff
+## Install RPI Docker Monitor
 📄Full Documentation - [RPI Docker Monitor](https://github.com/novaspirit/pi-hosted/blob/master/docs/rpi_docker_monitor.md)
 ```
 sudo nano /boot/cmdline.txt
@@ -84,6 +84,18 @@ sudo reboot
 #Run script:
 wget -qO- https://git.io/JPXba | sudo bash
 ```
+🖨️Copy this [JSON](https://github.com/oijkn/Docker-Raspberry-PI-Monitoring/blob/main/grafana/dashboard_by_oijkn.json) in Grafana
+
+
+
+## Install Throttled Script
+📄Full Documentation - [Throttled Script](https://github.com/novaspirit/pi-hosted/blob/master/docs/throttled.md)
+```
+wget -qO- https://git.io/JXzw0 | bash
+
+Run the following command to check the current status:
+sudo throttled.sh
+```
 
 
 
@@ -92,6 +104,7 @@ wget -qO- https://git.io/JPXba | sudo bash
 🛠️Git repo - [Nyr](https://github.com/Nyr)/**[wireguard-install](https://github.com/Nyr/wireguard-install)**
 
 ```
+su -
 wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 ```
 
