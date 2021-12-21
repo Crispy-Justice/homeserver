@@ -14,23 +14,10 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge &&
 ```
 sudo apt install curl wget speedtest-cli ranger git htop shellinabox tree
 ```
-## Install Zsh
-```
-sudo apt update &&
-sudo apt install zsh &&
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-♻️Reboot..
-
-📂Install Plugins
-```
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions &&
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-
+## Bash
 
 🖨️Copy these aliases to `.bashrc`
-   
+
 ```
 alias cls='clear'
 alias rm='printf "\033[1;31m" && rm -rIv'
