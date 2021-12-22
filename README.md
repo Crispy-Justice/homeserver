@@ -29,6 +29,9 @@ alias ping='ping -c 5'
 alias ports='netstat -tulanp'
 alias update='sudo apt update'
 alias upgrade='sudo apt update && sudo apt upgrade'
+alias ipi="ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p'"
+alias ipe='curl ifconfig.co'
+alias hot='sudo throttled.sh'
 ```
 ‼️logout and login
 
