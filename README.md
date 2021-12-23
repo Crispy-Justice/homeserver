@@ -107,6 +107,7 @@ wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.
 sudo nano /boot/config.txt
 
 Edit:
+temp_limit=70
 over_voltage=6
 arm_freq=2147
 gpu_freq=750
@@ -117,6 +118,7 @@ gpu_freq=750
 sudo nano /boot/config.txt
 
 Edit:
+temp_limit=70
 over_voltage=8
 arm_freq=2275
 gpu_freq=750
