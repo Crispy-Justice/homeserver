@@ -84,13 +84,13 @@ wget -qO- https://git.io/JPXba | sudo bash
 
 ```
 #Telegram script
-wget -qO- https://git.io/Jy0CP -P /usr/bin/
+sudo wget https://raw.githubusercontent.com/Crispy-Justice/homeserver/main/resources/telegram -P /usr/bin/
 
 #Temp script
-wget -qO- https://git.io/Jy0WO -P /usr/bin/
+sudo wget https://raw.githubusercontent.com/Crispy-Justice/homeserver/main/resources/temp_mon -P /usr/bin/
 
 Edit permissions
-chmod +x /usr/bin/temp_mon && chmod +x /usr/bin/telegram
+sudo chmod +x /usr/bin/temp_mon && sudo chmod +x /usr/bin/telegram
 ```
 
 
