@@ -1,0 +1,46 @@
+#!/bin/bash
+
+
+
+## VARIABLES ##
+
+# Temperature thresholds (warning and alarm). Use integers.
+# Alarm will use another mail subject and mark the mail as important.
+# Unit is only descriptive, not used for conversion.
+tmp_warn="50"
+tmp_alarm="62"
+
+
+## SCRIPT ##
+
+# Saves he current CPU temperature to a variable
+# grep checks whether it is a (float) numeric value
+tmp_akt=$(sudo vcgencmd measure_temp | cut -f 2 -d "=" | cut -f 1 -d "'" | grep -E '^\-?[0-9]*\.?[0-9]+$')
+if [ "$1" == "test" ]
+then
+  tmp_akt="333"
+elif [ -z $tmp_akt ]
+then
+  echo "${0##*/}: Error at reading the CPU temperature. Unknown command? No numeric value? Aborting script."
+  exit 1
+fi
+
+# Determines whether the current temperature is above warning and/or alarm threshold
+
+status_warn=$(echo $tmp_akt'>='$tmp_warn | bc -l)
+status_alarm=$(echo $tmp_akt'>='$tmp_alarm | bc -l)
+
+# Terminates script if none of both thresholds is reached
+if [[ $status_warn -eq 0 && $status_alarm -eq 0 ]]
+then
+  exit 0
+fi
+
+# Generates the mail text that will be sent
+if [ $status_alarm -eq 1 ]
+then
+  telegram "CPU temperature is high!!!"$'\n'"Current temp: $tmp_akt °C"
+elif [ $status_warn -eq 1 ]
+then
+  telegram "CPU temperature is high!"$'\n'"Current temp: $tmp_akt °C"
+fi
