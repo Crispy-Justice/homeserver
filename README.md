@@ -12,7 +12,7 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge &&
 
 ## Install Other Stuff
 ```
-sudo apt install curl wget speedtest-cli ranger git htop shellinabox tree
+sudo apt install curl wget speedtest-cli ranger git htop tree bc
 ```
 ## Bash
 
