@@ -14,7 +14,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 VERSION="0.4"
-TOKEN="5079059387:AAGj3walQOigr6vXpEADtoA8qcZ3br2YBgs"
+TOKEN="5083557066:AAFQnTta5o--AxlviEqJl5LLA4_UhI3joe8"
 CHATS=(5049087336)
 DEBUG=false
 DRY_RUN=false
