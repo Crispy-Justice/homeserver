@@ -89,8 +89,20 @@ sudo wget https://raw.githubusercontent.com/Crispy-Justice/homeserver/main/resou
 #Temp script
 sudo wget https://raw.githubusercontent.com/Crispy-Justice/homeserver/main/resources/temp_mon -P /usr/bin/
 
-Edit permissions
+#Edit permissions
 sudo chmod +x /usr/bin/temp_mon && sudo chmod +x /usr/bin/telegram
+
+#Edit crontab
+crontab -e
+
+#Paste:
+
+# Checks CPU temperature every 10 minutes and sends mail if it exceeds a threshold
+*/10 * * * * sudo bash /usr/local/bin/temp_mon
+
+#Restart crontab
+sudo service cron reload
+
 ```
 
 
