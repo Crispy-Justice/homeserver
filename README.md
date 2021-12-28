@@ -80,13 +80,17 @@ wget -qO- https://git.io/JPXba | sudo bash
 
 
 
-## Install Throttled Script
-📄Full Documentation - [Throttled Script](https://github.com/novaspirit/pi-hosted/blob/master/docs/throttled.md)
-```
-wget -qO- https://git.io/JXzw0 | bash
+## Install Temp Monitoring Scripts
 
-Run the following command to check the current status:
-sudo throttled.sh
+```
+#Telegram script
+wget -qO- https://git.io/Jy0CP -P /usr/bin/
+
+#Temp script
+wget -qO- https://git.io/Jy0WO -P /usr/bin/
+
+Edit permissions
+chmod +x /usr/bin/temp_mon && chmod +x /usr/bin/telegram
 ```
 
 
