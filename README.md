@@ -6,7 +6,7 @@
 
 ## Update the Pi
 ```
-sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge && sudo apt autoclean -y
+sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge && sudo apt autoclean -y && sudo reboot
 ```
 ♻️Reboot
 
@@ -49,7 +49,7 @@ alias shutdown='sudo shutdown now'
 
 📂Install Docker
 ```
-wget -qO- https://git.io/JwUkc | bash
+wget -qO- https://git.io/JwUkc | bash && sudo reboot
 ```
 
 ♻️Reboot..
