@@ -19,11 +19,11 @@ sudo apt install curl wget speedtest-cli ranger git htop tree bc
 
 ```
 alias cls='clear'
-alias rm='printf "\033[1;31m" && rm -rIv'
-alias cp='printf "\033[1;32m" && cp -rv'
-alias mv='printf "\033[1;34m" && mv -v'
-alias mkdir='printf "\033[1;33m" && mkdir -v'
-alias rmdir='printf "\033[1;35m" && rmdir -v'
+alias rm='rm -rIv'
+alias cp='cp -rv'
+alias mv='mv -v'
+alias mkdir='mkdir -v'
+alias rmdir='rmdir -v'
 
 alias ping='ping -c 5'
 alias ports='netstat -tulanp'
@@ -32,8 +32,6 @@ alias ipe='curl ifconfig.co'
 
 alias update='sudo apt update'
 alias upgrade='sudo apt update && sudo apt upgrade'
-
-alias hot='sudo throttled.sh'
 
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
