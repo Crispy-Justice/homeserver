@@ -8,7 +8,6 @@
 ```
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge && sudo apt autoclean -y && sudo reboot
 ```
-♻️Reboot
 
 ## Install Other Stuff
 ```
@@ -52,7 +51,6 @@ alias shutdown='sudo shutdown now'
 wget -qO- https://git.io/JwUkc | bash && sudo reboot
 ```
 
-♻️Reboot..
 📂Install Portainer
 ```
 wget -qO- https://git.io/JwUnf | bash
