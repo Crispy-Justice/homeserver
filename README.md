@@ -124,6 +124,7 @@ local_enable=YES
 write_enable=YES
 local_umask=022
 chroot_local_user=YES
+allow_writeable_chroot=YES
 user_sub_token=$USER
 local_root=/home/$USER/ftp
 
