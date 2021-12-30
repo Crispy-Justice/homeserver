@@ -112,6 +112,32 @@ su -
 wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 ```
 
+## Setup FTP
+
+```
+sudo apt install vsftpd
+
+sudo nano /etc/vsftpd.conf
+
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+local_umask=022
+chroot_local_user=YES
+user_sub_token=$USER
+local_root=/home/$USER/ftp
+
+mkdir -p /home/dietpi/ftp/files
+
+chmod -R 777 /home/dietpi/ftp
+
+sudo service vsftpd restart
+
+
+```
+
+
+
 ## Overclock
 
 🏎Level 1
