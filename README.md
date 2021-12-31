@@ -11,7 +11,7 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y --purge &&
 
 ## Install Other Stuff
 ```
-sudo apt install curl wget speedtest-cli ranger git htop tree bc net-tools
+sudo apt install curl wget speedtest-cli ranger git htop exa bc net-tools
 ```
 ## Bash
 
