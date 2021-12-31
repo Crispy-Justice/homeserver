@@ -18,6 +18,10 @@ sudo apt install curl wget speedtest-cli ranger git htop tree bc net-tools
 🖨️Copy these aliases to `.bashrc`
 
 ```
+alias ls='exa -F'
+alias la='exa -a'
+alias ll='exa -lah'
+
 alias cls='clear'
 alias rm='rm -rIv'
 alias cp='cp -rv'
