@@ -29,6 +29,12 @@ alias mv='mv -v'
 alias mkdir='mkdir -v'
 alias rmdir='rmdir -v'
 
+alias hdd-mount='sudo mount -t ext4 /dev/sda1 /hdd'
+alias hdd-unmount='sudo udisksctl unmount -b /dev/sda1'
+alias hdd-poweroff='udisksctl power-off -b /dev/sda'
+
+alias disks='lsblk'
+
 alias ping='ping -c 5'
 alias ports='netstat -tulanp'
 alias ipi="ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p'"
@@ -107,13 +113,9 @@ sudo service cron reload
 
 
 
-## Install WireGuard VPN
-
-🛠️Git repo - [Nyr](https://github.com/Nyr)/**[wireguard-install](https://github.com/Nyr/wireguard-install)**
-
+## Install Tailscale
 ```
-su -
-wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
+curl -fsSL https://tailscale.com/install.sh | sh
 ```
 
 ## Setup FTP
