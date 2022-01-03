@@ -31,7 +31,7 @@ alias rmdir='rmdir -v'
 
 alias hdd-mount='sudo mount -t ext4 /dev/sda1 /hdd'
 alias hdd-unmount='sudo udisksctl unmount -b /dev/sda1'
-alias hdd-poweroff='udisksctl power-off -b /dev/sda'
+alias hdd-poweroff='sudo udisksctl power-off -b /dev/sda'
 
 alias disks='lsblk'
 
