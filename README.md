@@ -82,6 +82,7 @@ sudo reboot
 #Run script:
 wget -qO- https://git.io/JPXba | sudo bash
 ```
+ID - `15120`
 🖨️Copy this [JSON](https://github.com/oijkn/Docker-Raspberry-PI-Monitoring/blob/main/grafana/dashboard_by_oijkn.json) in Grafana
 
 
