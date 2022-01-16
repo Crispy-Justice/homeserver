@@ -144,6 +144,11 @@ sudo service vsftpd restart
 
 ```
 
+## Add to `/etc/fstab`
+```
+PARTUUID=002f32b3-e518-4bd5-838d-5e13fe9f0449 /hdd ext4 defaults 0 2
+```
+
 
 
 ## Overclock
