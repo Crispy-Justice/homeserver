@@ -117,6 +117,8 @@ sudo service cron reload
 ## Install Tailscale
 ```
 curl -fsSL https://tailscale.com/install.sh | sh
+
+sudo systemctl enable --now tailscaled
 ```
 
 ## Setup FTP
