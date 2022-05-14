@@ -36,4 +36,9 @@ sudo nano /etc/telegraf/telegraf.conf
   data_format = "value"
   data_type = "integer"
 ``` 
+Enable telegraf
+```
+sudo systemctl enable -now telegraf.service
+sudo systemctl reload telegraf.service
+
 
