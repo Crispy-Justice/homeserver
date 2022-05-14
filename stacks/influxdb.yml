@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    influxdb:
+        ports:
+            - '8086:8086'
+        volumes:
+            - '/portainer/Files/AppData/Config/Influxdb/data:/var/lib/influxdb2'
+            - '/portainer/Files/AppData/Config/Influxdb/config:/etc/influxdb2'
+        environment:
+            - DOCKER_INFLUXDB_INIT_MODE=setup
+            - DOCKER_INFLUXDB_INIT_USERNAME=admin
+            - DOCKER_INFLUXDB_INIT_PASSWORD=coco3842
+            - DOCKER_INFLUXDB_INIT_ORG=coco_co
+            - DOCKER_INFLUXDB_INIT_BUCKET=telegraf
+        image: 'influxdb'
