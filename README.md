@@ -69,51 +69,6 @@ wget -qO- https://git.io/JwUnf | bash
 https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm64.json
 ```
 
-## Install RPI Docker Monitor
-📄Full Documentation - [RPI Docker Monitor](https://github.com/novaspirit/pi-hosted/blob/master/docs/rpi_docker_monitor.md)
-```
-sudo nano /boot/cmdline.txt
-
-#Paste:
-systemd.unified_cgroup_hierarchy=0 cgroup_enable=memory cgroup_memory=1
-
-sudo reboot
-
-#Run script:
-wget -qO- https://git.io/JPXba | sudo bash
-```
-ID - `15120`
-🖨️Copy this [JSON](https://github.com/oijkn/Docker-Raspberry-PI-Monitoring/blob/main/grafana/dashboard_by_oijkn.json) in Grafana
-
-
-
-## Install Temp Monitoring Scripts
-
-```
-#Telegram script
-sudo wget https://raw.githubusercontent.com/Crispy-Justice/homeserver/main/resources/telegram -P /usr/bin/
-
-#Temp script
-sudo wget https://raw.githubusercontent.com/Crispy-Justice/homeserver/main/resources/temp_mon -P /usr/bin/
-
-#Edit permissions
-sudo chmod +x /usr/bin/temp_mon && sudo chmod +x /usr/bin/telegram
-
-#Edit crontab
-crontab -e
-
-#Paste:
-
-# Checks CPU temperature every 10 minutes and sends mail if it exceeds a threshold
-*/10 * * * * sudo bash /usr/local/bin/temp_mon
-
-#Restart crontab
-sudo service cron reload
-
-```
-
-
-
 ## Install Tailscale
 ```
 curl -fsSL https://tailscale.com/install.sh | sh
